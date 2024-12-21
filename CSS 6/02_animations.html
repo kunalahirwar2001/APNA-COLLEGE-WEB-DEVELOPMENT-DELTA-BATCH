@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 100px;
+            /* width: 300px; */
+            background-color: pink;
+
+            animation-name: fontAnimation;
+            /*animation ka naam kiya hoga*/
+            animation-duration: 2s;
+            /*Kitni deer tak hoga*/
+            animation-timing-function: ease-in;
+            /*Kiss tarike se(style) hoga*/
+            animation-delay: 0;
+            /*Kitni deer baad hoga*/
+            animation-iteration-count: 3;
+            /*Kitni baar hoga*/
+            animation-direction: normal;
+            /*kaha se kaha tak hoga uski direction hoga*/
+
+            animation: widthAnimate 3s ease-in 0 infinite normal;
+            /*animation-name / animation-duration / animation-timing-function / animation-delay / animation-iteration-count / animation-direction */
+        }
+
+        /* @keyframes fontAnimation {
+            from {
+                width: 100px;
+                background-color: orange;
+                border-radius: 0%;
+            }
+            to {
+                width: 400px;
+                background-color: green;
+                border-radius: 50%;
+            }
+        } */
+
+        @keyframes fontAnimation {
+            0% {
+                background-color: orange;
+            }
+
+            50% {
+                background-color: blue;
+            }
+
+            100% {
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Animation in css is used for styling user interfaces and creating animation effects. It is a way to style elements and then change their style -->
+    <!-- In @keyFrames from means 0% and to means 100% -->
+
+    <h1>Animations</h1>
+    <div class="box">This is a box</div>
+</body>
+
+</html>

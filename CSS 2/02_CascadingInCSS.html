@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="02_cascading.css">
+</head>
+
+<body>
+    <!-- Cascading in CSS means that we can apply styles to multiple elements at once -->
+    <!-- The CSS cascade Algorithm's job is to select CSS declarations in order to determine the correct values for CSS  properties -->
+    <!-- If there are two css files , the last one will override the first one -->
+    <!-- inline Style > id > class,attribute & pseudo-class > element & pseudo-element -->
+    <!-- <h1 id="title" class="title-class">Hello World</h1> -->
+    <!-- #title{
+        color: blue;
+    }  -->
+    <!-- 1 0 0 -->
+
+    <!-- .myClass:hover{
+        color:blue;
+    } -->
+    <!--0 2 0  -->
+    <!-- If specificity  is equal, the last rule(cascading) will be applied -->
+
+    <!-- !important is used to show the browser that this rule is more important than the others -->
+    <!-- background-color:blue !important -->
+
+
+    <header>
+        <h1 id="Myid">Quora
+            <button id="login">Log in</button>
+            <button id="signup">Sign up</button>
+        </h1>
+        <div>
+            <input type="text" placeholder="username">
+            <input type="password" placeholder="password">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/following">Following</a></li>
+                <li><a href="/answer">Answer</a></li>
+                <li><a href="/spaces">Spaces</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <p class="post">
+            Adam &nbsp;&nbsp;
+            <a class="follow" href="/adam">Follow /abc</a></span>
+        </p>
+        <h3 class="Myclass">What is the highest salary for a spacex engineer?</h3>
+        <span>
+            <button>+upvote</button>
+            <button>answer</button>
+        </span>
+        <hr />
+
+        <p class="post">
+            Bob &nbsp;&nbsp;
+            <a class="follow" href="/bob">Follow xyz</a>
+        </p>
+        <h3 class="Myclass">What is the syllabus for JEE 2024?</h3>
+        <span>
+            <button>+upvote</button>
+            <button>answer</button>
+        </span>
+        <hr />
+
+        <p class="post">
+            Catlyn &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="follow" href="/catlyn">Follow pqr</a>
+        </p>
+        <h3 class="Myclass">Why is the sky blue?</h3>
+        <span>
+            <button>+upvote</button>
+            <button>answer</button>
+        </span>
+        <hr />
+
+        <p class="post">
+            Dan &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="follow" href="/dan">Follow pqr</a>
+        </p>
+        <h3 class="Myclass">Why is the sky blue?</h3>
+        <span>
+            <button>+upvote</button>
+            <button>answer</button>
+        </span>
+        <hr />
+    </main>
+    <div>
+        <input type="radio" id="yes" name="agreement">
+        <label for="yes">yes</label>
+        <input type="radio" id="no" name="agreement">
+        <label for="no">No</label>
+    </div>
+
+
+
+</body>
+
+</html>

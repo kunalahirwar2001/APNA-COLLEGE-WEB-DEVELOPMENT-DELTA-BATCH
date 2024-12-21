@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        h1 {
+            border: 2px solid black;
+            width: 33.33%;
+        }
+
+        #outer {
+            height: 400px;
+            width: 400px;
+            background-color: pink;
+            margin: 50px;
+        }
+
+        #inner {
+            height: 100px;
+            width: 100px;
+            background-color: cornflowerblue;
+            margin: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Percentage : It is often used to define a size as relative to an elements parent object -->
+    <!-- width : 33.33% relative to the parent -->
+    <!-- margin-left : 50%  relative to the parent -->
+
+    <!-- Em : It is often  used to define a size as relative to the font size of the element -->
+    <!-- 1em: Equals the current font size 
+         2em: Two times the current font size 
+    For example, if the font size is 11 pixels, then 2em is 22 pixels. 
+    Ems are scalable and do not have fixed sizes, making them popular in web documents and mobile web development. -->
+    <!-- Drawback of Em : Snowballing Effect is -->
+
+    <!-- Rem : It is often  used to define a size as relative to the root element of the document -->
+    <!-- The value of 1 rem is equal to the font size of the root element, which is usually the HTML element. For example, if the root element is 16px, then an element with the value 1rem will also be 16px. -->
+    <h1>Heading</h1>
+    <div id="outer">
+        <div id="inner"></div>
+    </div>
+</body>
+
+</html>

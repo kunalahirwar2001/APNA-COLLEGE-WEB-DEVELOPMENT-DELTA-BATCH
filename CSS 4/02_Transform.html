@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    section {
+        margin-top: 100px;
+    }
+
+    div {
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        background-color: #7aa874;
+        border: 2px solid black;
+        margin: 10px;
+    }
+
+    div:nth-of-type(2n) {
+        background-color: #f7db6a;
+    }
+
+    div:nth-of-type(3n) {
+        background-color: #ebb02d;
+    }
+
+    #one {
+        transform: rotate(45deg);
+        /*anticlockwise*/
+    }
+
+    #two {
+        transform: scale(0.5);
+        transform: scale(2, 0.5);
+        transform: scaleX(2);
+        transform: scaleY(0.5);
+    }
+
+    #three {
+        transform: translate(50px, 50px);
+        transform: translateX(50px);
+        /* transform: translateY(50px); */
+    }
+
+    #four {
+        transform: skew(30deg);
+    }
+
+    #five {
+        transform: rotate(30deg) skew(30deg) translateX(10px);
+    }
+</style>
+
+<body>
+    <!-- CSS Transform is used to lets you rotate, scale, translate, or skew elements. -->
+
+    <section>
+        <div id="one">1</div>
+        <div id="two">2</div>
+        <div id="three">3</div>
+        <div id="four">4</div>
+        <div id="five">5</div>
+    </section>
+</body>
+
+</html>

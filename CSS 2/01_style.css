@@ -1,0 +1,85 @@
+/* Universal Selector */
+/* *{
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
+
+/* Element Selector */
+/* h3{
+    color: blueviolet;
+}
+h3,h1{
+    color: brown;
+} */
+
+/* ID Selector */
+/* #Myid{
+    color: blueviolet;
+} */
+
+/* Class Selector */
+/* .Myclass{
+    color: darkkhaki;
+} */
+
+/* Decendant Selector */
+/* li a{
+    color: chartreuse;
+}
+h1[id ="Myid"] button{
+    color: yellow;
+} */
+
+/* Sibling Selector */
+/* p + h3{
+    text-decoration: underline;
+} */
+
+/* Child Combinator */
+/* p > a{
+    color:pink;
+} */
+
+/* Attribute Selector */
+/* input[type="text"]{
+    color: cadetblue;
+}
+input[type="password"]{
+    color: crimson;
+} */
+
+/* pseudo selector */
+/* button:hover{
+    color: red;
+    background-color: aquamarine;
+}
+button:active{
+    color: blueviolet;
+}
+p:active{
+font-weight: bold;
+color: green;
+}
+input[type="radio"]:checked + label{
+    color: brown;
+    font-weight: bold;
+}
+.post:nth-of-type(2){
+    background-color: aquamarine;
+} */
+/* n means  nth child */
+/* 2n means  even number */
+/* 3n  means  multiple of 3 */
+
+/* Pseudo Element */
+h1::first-letter {
+    color: blue;
+}
+
+p::first-line {
+    color: pink;
+}
+
+p::selection {
+    background-color: yellow;
+}
