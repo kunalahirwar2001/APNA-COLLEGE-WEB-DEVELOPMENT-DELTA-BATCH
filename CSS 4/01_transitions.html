@@ -11,12 +11,14 @@
             height: 300px;
             background-color: green;
             margin: 0 auto;
-            transition: margin-top 2s ease-in-out 1s; 
-            /*Short-hand for transition property*/
             margin-top: 10px;
-            transition-duration: 1s;
+            transition-duration: 2s;
             transition-delay: 1s;
+            transition-timing-function: ease-in-out;
+            transition-property: margin-top;
             
+            /*Short-hand for transition property*/
+            /* transition: margin-top 2s ease-in-out 1s; */
         }
 
         div:hover {
